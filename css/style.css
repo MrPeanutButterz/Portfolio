@@ -15,15 +15,15 @@ main {
 
 section {
     max-width: 1500px;
-    padding-top: 100px;
 
     display: flex;
     flex-direction: row;
 
-    /* TMP */
+    max-height: 900px;
+    height: 100vh;
 
-    border: 1px solid gray;
-    height: 100vh
+    /* TMP */
+    /*border: 1px solid gray;*/
 }
 
 .section-banner {
@@ -40,6 +40,53 @@ section {
     font-family: monospace, sans-serif;
 }
 
+/* NAV =========================================================== */
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+    z-index: 1;
+    max-width: 1400px;
+    width: 100%;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style-type: none;
+}
+
+nav > ul > a {
+    color: whitesmoke;
+}
+
+nav > ul > li > a:hover {
+    color: var(--font-color-primary);
+}
+
+nav > ul > li {
+    font-size: 18px;
+}
+
+nav > ul > li:nth-child(2) {
+    font-size: 19px;
+}
+
+nav > ul > li:nth-child(3) {
+    font-size: 20px;
+}
+
+nav > ul > li:nth-child(4) {
+    font-size: 19px;
+}
+
+
 /* HOME =========================================================== */
 
 .home-content {
@@ -47,6 +94,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .home-content > div:nth-child(1) > p {
@@ -56,12 +104,10 @@ section {
 .home-content > div:nth-child(1) > img {
     max-width: 350px;
     transform: scaleX(-1);
-    margin-top: 80px;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .home-content > div:nth-child(2) {
-    margin-top: 70px;
     padding: 30px
 }
 
@@ -92,10 +138,8 @@ section {
 }
 
 /* ABOUT ========================================================== */
-/*
 
 .about-content {
-    position: absolute;
     overflow: hidden;
 }
 
@@ -113,41 +157,220 @@ section {
     font-family: "ui-monospace", sans-serif;
 }
 
+
 .about-content > div:nth-child(1) > h1:nth-child(2) {
     position: relative;
     top: -300px;
     left: 80px;
     color:white;
-    opacity: 0.2;
+    opacity: 0.1;
     font-size: 200px;
     font-weight: lighter;
     font-family: "ui-monospace", sans-serif;
 }
 
 .about-content > div:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
     max-height: 200px;
     width: 100%
 }
 
 .about-content > div:nth-child(2) > p {
-    max-width: 900px;
+    max-width: 800px;
+    padding: 30px
+}
+
+/* Experience ========================================================== */
+
+.experience-content {
+    overflow: hidden;
+}
+
+.experience-content > div {
+    width: 100%;
+    height: 400px;
+}
+
+.experience-content > div:nth-child(1) > h1:nth-child(1) {
+    position: relative;
+    left: -90px;
+    color:white;
+    opacity: 0.01;
+    font-size: 400px;
+    font-family: "ui-monospace", sans-serif;
 }
 
 
+.experience-content > div:nth-child(1) > h1:nth-child(2) {
+    position: relative;
+    top: -300px;
+    left: 180px;
+    color:white;
+    opacity: 0.1;
+    font-size: 200px;
+    font-weight: lighter;
+    font-family: "ui-monospace", sans-serif;
+}
 
-*/
+.experience-content > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.experience-content > div:nth-child(2) > ul {
+    list-style: none;
+    width: fit-content;
+    margin-top: -90px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
 
+.experience-content > div:nth-child(2) > div {
+    margin-left: 140px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+/* Work ========================================================== */
+
+.work-content {
+    overflow: hidden;
+}
+
+.work-content > div {
+    width: 1400px;
+    height: 400px;
+}
+
+.work-content > div:nth-child(1) > h1:nth-child(1) {
+    position: relative;
+    left: 450px;
+    color:white;
+    opacity: 0.01;
+    font-size: 400px;
+    font-family: "ui-monospace", sans-serif;
+}
 
 
+.work-content > div:nth-child(1) > h1:nth-child(2) {
+    position: relative;
+    top: -250px;
+    left: 880px;
+    color:white;
+    opacity: 0.1;
+    font-size: 200px;
+    font-weight: lighter;
+    font-family: "ui-monospace", sans-serif;
+}
+
+.work-content > div:nth-child(2) {
+    width: 450px;
+    height: 325px;
+    border-radius: 2px;
+    margin-left: 150px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.work-content > div:nth-child(2) > img {
+    width: 450px;
+    padding: 5px;
+}
+
+.work-content > div:nth-child(2) > h2 {
+    margin-top: 20px;
+    font-size: 32px;
+    font-family: monospace, sans-serif;
+    font-weight: lighter;
+    color: var(--font-color-primary);
+}
+
+.work-content > div:nth-child(2) > p {
+    margin-top: 10px;
+}
 
 
+/* Contact ========================================================== */
+
+.contact-content {
+    overflow: hidden;
+}
+
+.contact-content > div {
+    width: 1400px;
+    height: 400px;
+}
+
+.contact-content > div:nth-child(1) > h1:nth-child(1) {
+    position: relative;
+    left: 0;
+    color:white;
+    opacity: 0.01;
+    font-size: 400px;
+    font-family: "ui-monospace", sans-serif;
+}
 
 
+.contact-content > div:nth-child(1) > h1:nth-child(2) {
+    position: relative;
+    top: -200px;
+    left: 90px;
+    color:white;
+    opacity: 0.1;
+    font-size: 200px;
+    font-weight: lighter;
+    font-family: "ui-monospace", sans-serif;
+}
 
+.contact-content > div:nth-child(2) {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.contact-content > div:nth-child(2) > form {
+    padding-top: 130px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
 
+.contact-content > div:nth-child(2) > form > div:nth-child(2) {
+    display: flex; flex-direction: column;
+}
 
+.input-box {
+    width: 300px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.input-area {
+    margin: 18px;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.input-button {
+    margin-left: 18px;
+    background-color: var(--font-color-primary);
+}
 
 
 

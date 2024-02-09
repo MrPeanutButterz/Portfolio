@@ -17,6 +17,10 @@
     color: whitesmoke;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a:link,
 a:visited,
 a:hover,
