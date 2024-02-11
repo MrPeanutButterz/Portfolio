@@ -125,13 +125,15 @@ p {
     height: 150px;
     width: 100%;
     /*background-color: #29232C;*/
-    background: repeating-linear-gradient(
-            45deg,
-            #29232C,
-            #29232C 10px,
-            #29232C 10px,
-            rgba(217, 168, 1, 0.5) 20px
-    );
+    background: conic-gradient(
+            rgba(41,35,44, 0.35),
+            rgba(41,35,44, 0.35),
+            rgba(217, 168, 1, 0.17),
+            rgba(41,35,44, 0.35),
+            rgba(41,35,44, 0.35),
+            rgba(217, 168, 1, 0.17),
+            rgba(41,35,44, 0.35));
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,13 +163,8 @@ p {
     gap: 10px;
 }
 
-
-
-
-
-
-
-
+/* ==================================================================
+ @MEDIA */
 
 @media only screen and (max-width: 800px) {
 
