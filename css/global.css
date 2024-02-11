@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Diphylleia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crushed&family=Italiana&family=Josefin+Sans&family=Rokkitt&display=swap');
 
 :root {
-    --font-fam-diphy: 'Dancing Script', cursive;
-    --font-fam-dance: 'Diphylleia', serif;
+    --font-fam-italiana: 'Italiana', sans-serif;
+    --font-fam-crushed: 'Crushed', sans-serif;
+    --font-fam-josefien: 'Josefin Sans', sans-serif;
+    --font-fam-rokkitt: 'Rokkitt', serif;
 
-    --background-color: rgb(22, 23, 21);
+    --background-color: rgb(255, 255, 255);
 
     --font-color-white: rgb(255, 255, 255);
+    --font-color-black: rgb(0, 0, 0);
     --font-color-primary: rgb(82, 187, 0);
 }
 
@@ -14,7 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: whitesmoke;
+    color: var(--font-color-black);
 }
 
 html {
@@ -25,6 +28,10 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-    color: whitesmoke;
+    color: var(--font-color-black);
     text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
