@@ -20,6 +20,11 @@ main {
     max-width: 1500px;
 
     padding: 5vh 0 0 0;
+
+    opacity: 0;
+
+    animation: fadeInAnimation 1s forwards; /* Set animation duration to 0s */
+    animation-delay: 2s; /* Delay the animation by 1 second */
 }
 
 .left-section {
@@ -105,6 +110,15 @@ p {
     to {
         opacity: 0;
         z-index: -1;
+    }
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
@@ -225,6 +239,10 @@ p {
 }
 
 @media only screen and (max-width: 470px) {
+
+    h1 {
+        font-size: 42px;
+    }
 
     .left-section {
         height: 60px;
