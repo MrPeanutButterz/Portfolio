@@ -23,11 +23,14 @@ main {
 }
 
 .left-section {
-    height: 100%;
     max-width: 200px;
     min-width: 20%;
 
-    padding: 5px 15px 0 15px;
+    padding: 5px 15px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .right-section {
@@ -39,6 +42,14 @@ main {
     flex-direction: column;
     gap: 30px;
     padding-bottom: 80px;
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 /* ==================================================================
@@ -176,11 +187,11 @@ p {
     }
 
     .left-section {
-        height: 40px;
-        max-width: 200px;
-        min-width: 20%;
-
-        padding: 5px 0 0 0;
+        height: 60px;
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 0 30px 0;
     }
 
     .right-section {
@@ -233,6 +244,10 @@ p {
         display: flex;
         flex-direction: column;
         gap: 15px;
+    }
+
+    .socials-container {
+        gap: 5px;
     }
 
 }
