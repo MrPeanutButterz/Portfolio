@@ -7,10 +7,9 @@
     --font-fam-rokkitt: 'Rokkitt', serif;
 
     --background-color: rgb(239, 239, 238);
-
     --font-color-white: rgb(255, 255, 255);
     --font-color-black: rgb(0, 0, 0);
-    --font-color-primary: rgb(82, 187, 0);
+    --primary-color: rgb(44, 227, 74);
 }
 
 * {
@@ -21,6 +20,8 @@
 }
 
 html {
+    display: flex;
+    justify-content: center;
     scroll-behavior: smooth;
 }
 
