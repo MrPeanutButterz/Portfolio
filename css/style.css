@@ -3,7 +3,7 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
 
     display: flex;
     justify-content: center;
@@ -30,6 +30,7 @@ main {
 .left-section {
     max-width: 200px;
     min-width: 20%;
+    height: 100%;
 
     padding: 5px 15px 30px 15px;
     display: flex;
@@ -150,14 +151,13 @@ p {
     height: 150px;
     width: 100%;
     background: conic-gradient(
-            rgba(41,35,44, 0.35),
-            rgba(41,35,44, 0.35),
+            rgba(41, 35, 44, 0.35),
+            rgba(41, 35, 44, 0.35),
             rgba(217, 168, 1, 0.17),
-            rgba(41,35,44, 0.35),
-            rgba(41,35,44, 0.35),
+            rgba(41, 35, 44, 0.35),
+            rgba(41, 35, 44, 0.35),
             rgba(217, 168, 1, 0.17),
-            rgba(41,35,44, 0.35));
-
+            rgba(41, 35, 44, 0.35));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,7 +195,7 @@ p {
     main {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 15px;
         padding: 15px 15px 0 15px;
     }
 
