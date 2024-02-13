@@ -118,14 +118,14 @@ ul {
 .cards-container {
     display: flex;
     flex-direction: row;
-    gap: 90px;
+    gap: 60px;
 }
 
 .card-wrapper {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 300px;
+    max-width: 250px;
 }
 
 .card-img-container {
