@@ -15,85 +15,60 @@
 <body>
 
 <header>
-    <div>
-        <h1>CE</h1>
-    </div>
-    <div class="socials-container">
-        <a href="https://github.com/MrPeanutButterz" target="_blank">
-            <i class="fa fa-github" style="font-size:26px"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/charlie-eysbroek-aa229a108/" target="_blank">
-            <i class="fa fa-linkedin-square" style="font-size:24px"></i>
-        </a>
-    </div>
+    <nav>
+        <ul>
+            <li id="nav-link" >
+                <div class="separator"></div>
+                <a href="#about"><h4>About</h4></a>
+            </li>
+            <li>
+                <div class="separator"></div>
+                <a href="#projects"><h4>Projects</h4></a>
+            </li>
+            <li>
+                <div class="separator"></div>
+                <a href="#contact"><h4>Contact</h4></a>
+            </li>
+        </ul>
+    </nav>
 </header>
 
-<div class="separator"></div>
+<main class="hover-container">
 
-<main>
-
-    <div id="hero">
-        <h1>Charlie Eysbroek</h1>
-        <h3>Eager to expand my skills as a full stack developer.</h3>
-    </div>
+    <section id="hero">
+        <h1>Hello, I'm Charlie a Full Stack Developer from the Netherlands. Eager to expand my skills</h1>
+    </section>
 
     <section id="about">
-        <h4>.about</h4>
-        <p>Hello there! I'm a curious soul always ready to
-            <mark> embrace challenges. </mark>
-            For me, the journey of creating is just as significant as the end result itself. With an insatiable appetite
-            for exploration and a penchant for overcoming obstacles, I find
-            <mark>joy in unraveling complexities </mark>
-            and discovering innovative solutions.
-        </p>
+        <div>
+            <h3>Hello</h3>
+            <p>Hello there! I'm a curious soul always ready to embrace challenges. For me, the journey of creating is
+                just
+                as significant as the end result itself. With an insatiable appetite for exploration and a penchant for
+                overcoming obstacles, I find joy in unraveling complexities and discovering innovative solutions. </p>
+        </div>
+        <img src="img/Novi.jpg" class="resize"  alt="">
     </section>
 
-    <section>
-        <h4>.skill</h4>
-        <div class="skill-list-container">
-            <ul>
-                <li><p>Html</p></li>
-                <li><p>Css</p></li>
-                <li><p>Javascript</p></li>
-                <li><p>React</p></li>
-                <li><p>D3</p></li>
-            </ul>
-            <ul>
-                <li><p>Java</p></li>
-                <li><p>Python</p></li>
-                <li><p>Spring Boot</p></li>
-                <li><p>PostgreSql</p></li>
-            </ul>
-        </div>
+    <section id="projects">
+        <h3>Projects</h3>
     </section>
 
-    <section>
-        <h4>.work</h4>
-        <div class="cards-container">
-            <div class="card-wrapper">
-                <a href="https://github.com/MrPeanutButterz/Typpr" class="card-img-container">
-                    <img src="img/Typpr.png" alt="">
-                </a>
-                <div>
-                    <h3>Typpr</h3>
-                    <p>Typpr was my first project and has evolved into a tool for anyone looking to enhance their typing
-                        skills </p>
-                </div>
-            </div>
-            <div class="card-wrapper">
-                <a href="https://github.com/MrPeanutButterz/GymManagementApi" class="card-img-container">
-                    <img src="img/TechnoGym.png" alt="">
-                </a>
-                <div>
-                    <h3>Gym Management API</h3>
-                    <p>This system is designed to provide a streamlined experience for both fitness center members
-                        and administrators, making data management and progress monitoring more straightforward.</p>
-                </div>
-            </div>
-        </div>
+    <section id="contact">
+        <h3>Contact</h3>
     </section>
 
 </main>
+
+<footer>
+
+    <a href="#hero"><h4>Charlie Eysbroek</h4></a>
+
+    <div class="separator"></div>
+
+</footer>
+
+<div id="custom-cursor"></div>
 
 <script src="js/app.js"></script>
 </body>
