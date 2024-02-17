@@ -1,9 +1,9 @@
 const customCursor = document.getElementById('custom-cursor');
 const hoverContainer = document.querySelector('.hover-container');
 
-const updateCursorPosition = (event) => {
-  customCursor.style.top = `${event.pageY}px`;
-  customCursor.style.left = `${event.pageX}px`;
+const updateCursorPosition = (e) => {
+  customCursor.style.top = `${e.pageY}px`;
+  customCursor.style.left = `${e.pageX}px`;
 }
 
 window.addEventListener('mousemove', (event) => {
@@ -15,3 +15,6 @@ window.addEventListener('mousemove', (event) => {
     customCursor.classList.add('zoom')
   }
 })
+
+//add this class to main  class="hover-container"
+//add this div to body <div id="custom-cursor"></div>
