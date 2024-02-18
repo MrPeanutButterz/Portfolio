@@ -378,6 +378,39 @@ input:-webkit-autofill:active {
     animation-timing-function: ease-in-out;
 }
 
+#custom-cursor.write {
+    width: 1px;
+    height: 50px;
+    border-radius: 5px;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transform: translate(-3px, -25px);
+    animation-name: write-in;
+    animation-duration: 800ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes write-in {
+    from {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 4px solid orange;
+        transform: translate(-50px, -50px);
+    }
+    to {
+        width: 1px;
+        height: 50px;
+        border-radius: 0;
+        position: absolute;
+        pointer-events: none;
+        mix-blend-mode: difference;
+        transform: translate(-3px, -25px);
+    }
+}
+
 @keyframes zoom-out {
     from {
         width: 30px;
@@ -414,7 +447,7 @@ body,
 a,
 label,
 textarea,
-#contact > form > input{
+#contact > form > input {
     cursor: none;
 }
 
@@ -578,7 +611,6 @@ textarea,
     }
 
     /* CURSOR */
-
     #custom-cursor,
     #custom-cursor.zoom {
         visibility: hidden;
@@ -613,7 +645,6 @@ textarea,
     }
 
     /* LAYOUT */
-
     #about {
         align-items: flex-start;
         justify-content: flex-start;
@@ -657,7 +688,6 @@ textarea,
     }
 
     /* LAYOUT */
-
     main {
         padding: 0 10px;
     }

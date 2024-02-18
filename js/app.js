@@ -13,10 +13,10 @@ window.addEventListener('mousemove', (event) => {
 
 
 // Zoek alle elementen met de classname 'hover-element'
-const elements = document.querySelectorAll('.hover-element');
+const hElements = document.querySelectorAll('.hover-element');
 
 // Voeg event listeners toe aan elk gevonden element
-elements.forEach(element => {
+hElements.forEach(element => {
   element.addEventListener('mouseover', () => {
     customCursor.classList.add("zoom")
 
@@ -24,6 +24,22 @@ elements.forEach(element => {
 
   element.addEventListener('mouseout', () => {
     customCursor.classList.remove('zoom')
+  });
+});
+
+
+// Zoek alle elementen met de classname 'write-element'
+const wElement = document.querySelectorAll('.write-element')
+
+// Voeg event listeners toe aan elk gevonden element
+wElement.forEach(element => {
+  element.addEventListener('mouseover', () => {
+    customCursor.classList.add("write")
+
+  });
+
+  element.addEventListener('mouseout', () => {
+    customCursor.classList.remove('write')
   });
 });
 
