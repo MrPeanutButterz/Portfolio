@@ -216,6 +216,10 @@ footer > div {
     scale: 101%;
 }
 
+#projects > div:nth-child(1) > ul > li:nth-child(2) > a > h3 {
+    text-decoration: underline;
+}
+
 #projects > div:nth-child(1) > ul > li:nth-child(2) > a:hover {
     background-color: greenyellow;
     border-radius: 8px;
@@ -573,6 +577,12 @@ textarea,
         width: 60%;
     }
 
+    /* CURSOR */
+
+    #custom-cursor,
+    #custom-cursor.zoom {
+        visibility: hidden;
+    }
 }
 
 @media all and (max-width: 736px) {
@@ -616,6 +626,7 @@ textarea,
         rotate: 0deg;
         transform: translateX(0px);
     }
+
 }
 
 @media all and (max-width: 480px) {
