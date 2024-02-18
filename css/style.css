@@ -217,15 +217,22 @@ footer > div {
     scale: 101%;
 }
 
-#projects > div:nth-child(1) > ul > li:nth-child(2) > a > h3 {
-    text-decoration: underline;
-}
-
-#projects > div:nth-child(1) > ul > li:nth-child(2) > a:hover {
+#projects > div:nth-child(1) > ul > li > a:hover {
     background-color: greenyellow;
     border-radius: 8px;
-    transform: translateY(-1px);
-    scale: 101%;
+    scale: 98%;
+}
+
+#projects > div:nth-child(1) > ul > li > a:nth-child(1):hover::after {
+    content: "Get code on Github";
+    font-weight: bold;
+    color: var(--font-color-black);
+}
+
+#projects > div:nth-child(1) > ul > li > a:nth-child(2):hover::after {
+    content: "Website";
+    font-weight: bold;
+    color: var(--font-color-black);
 }
 
 #projects > div:nth-child(1) > ul > li > a:nth-child(1) {
