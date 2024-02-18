@@ -88,7 +88,7 @@ header > nav > ul {
 }
 
 header > nav > ul > li {
-    border-top: 1px solid black;
+    border-top: 1px solid gray;
     width: 100%;
     padding-bottom: 20px;
 }
@@ -115,7 +115,7 @@ footer {
 }
 
 footer > div {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid gray;
 }
 
 /* ================================ ABOUT */
@@ -159,6 +159,7 @@ footer > div {
     object-fit: contain;
     rotate: 10deg;
     transform: translateX(40px);
+    border-radius: 4px;
 }
 
 /* ================================ PROJECTS */
@@ -212,7 +213,7 @@ footer > div {
 #projects > div:nth-child(1) > ul > li:nth-child(4) > a:nth-child(2):hover {
     background-color: greenyellow;
     border-radius: 8px;
-    transform: translateY(-5px);
+    transform: translateY(-1px);
     scale: 101%;
 }
 
@@ -223,7 +224,7 @@ footer > div {
 #projects > div:nth-child(1) > ul > li:nth-child(2) > a:hover {
     background-color: greenyellow;
     border-radius: 8px;
-    transform: translateY(-5px);
+    transform: translateY(-1px);
     scale: 101%;
 }
 
@@ -394,11 +395,11 @@ input:-webkit-autofill:active {
 
 @keyframes write-in {
     from {
-        width: 100px;
-        height: 100px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
-        border: 4px solid orange;
-        transform: translate(-50px, -50px);
+        border: 2px solid orange;
+        transform: translate(-5px, -5px);
     }
     to {
         width: 1px;
@@ -413,10 +414,11 @@ input:-webkit-autofill:active {
 
 @keyframes zoom-out {
     from {
-        width: 30px;
-        height: 30px;
-        border: 15px solid greenyellow;
-        transform: translate(-15px, -15px);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid orange;
+        transform: translate(-5px, -5px);
     }
     to {
         width: 100px;
@@ -429,11 +431,11 @@ input:-webkit-autofill:active {
 
 @keyframes zoom-in {
     from {
-        width: 100px;
-        height: 100px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
-        border: 4px solid orange;
-        transform: translate(-50px, -50px);
+        border: 2px solid orange;
+        transform: translate(-5px, -5px);
     }
     to {
         width: 30px;
@@ -648,6 +650,12 @@ textarea,
     #about {
         align-items: flex-start;
         justify-content: flex-start;
+    }
+
+    #projects > div:nth-child(2) {
+        visibility: hidden;
+        width: 0;
+        height: 0;
     }
 
     #about > div:nth-child(2) > img {

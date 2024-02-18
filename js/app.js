@@ -19,7 +19,6 @@ const hElements = document.querySelectorAll('.hover-element');
 hElements.forEach(element => {
   element.addEventListener('mouseover', () => {
     customCursor.classList.add("zoom")
-
   });
 
   element.addEventListener('mouseout', () => {
@@ -35,7 +34,6 @@ const wElement = document.querySelectorAll('.write-element')
 wElement.forEach(element => {
   element.addEventListener('mouseover', () => {
     customCursor.classList.add("write")
-
   });
 
   element.addEventListener('mouseout', () => {
