@@ -220,7 +220,7 @@ footer > div {
 #projects > div:nth-child(1) > ul > li > a:hover {
     background-color: greenyellow;
     border-radius: 8px;
-    scale: 98%;
+    scale: 101%;
 }
 
 #projects > div:nth-child(1) > ul > li > a:nth-child(1):hover::after {
@@ -229,7 +229,7 @@ footer > div {
     color: var(--font-color-black);
 }
 
-#projects > div:nth-child(1) > ul > li > a:nth-child(2):hover::after {
+#projects > div:nth-child(1) > ul > li > a:nth-child(2):hover::before {
     content: "Website";
     font-weight: bold;
     color: var(--font-color-black);
@@ -452,11 +452,7 @@ input:-webkit-autofill:active {
     }
 }
 
-body,
-a,
-label,
-textarea,
-#contact > form > input {
+body, a, label, textarea, #contact > form > input {
     cursor: none;
 }
 
@@ -623,6 +619,10 @@ textarea,
     #custom-cursor,
     #custom-cursor.zoom {
         visibility: hidden;
+    }
+
+    body, a, label, textarea, #contact > form > input, #contact > form > button {
+        cursor: default;
     }
 }
 
